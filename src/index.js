@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Admin from "./Admin";
 import "./index.css";
-
+import Login from "./components/Login";
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Admin/>);
+root.render(<Login/>);
