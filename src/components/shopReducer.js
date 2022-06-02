@@ -2,8 +2,8 @@ import { createSlice } from "@reduxjs/toolkit";
 
 let lastId = 3;
 
-export const bookSlice = createSlice({
-  name: "Book",
+export const ShopSlice = createSlice({
+  name: "product",
   initialState: [
     {
       id: 1,
@@ -40,3 +40,6 @@ export const bookSlice = createSlice({
     },
   },
 });
+
+export const { addShop } = ShopSlice.actions;
+export default ShopSlice.reducer;
