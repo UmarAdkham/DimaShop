@@ -5,7 +5,7 @@ function Login() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    if (user.username == "superadmin" && user.password == 5) {
+    if (user.username === "superadmin" && user.password === 5) {
       alert("successs!!");
     } else {
       alert("ooppsss smth wrong");
