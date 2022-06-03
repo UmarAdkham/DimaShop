@@ -1,11 +1,11 @@
 import React, { useRef, useState } from "react";
 import { useDispatch } from "react-redux";
 import { addShop } from "../redux/shopReducer";
-
+import ShopTable from "./ShopTable";
 function AddShop() {
   const [shop, setShop] = useState({});
   const errorText = useRef(0);
-let dispatch = useDispatch()
+let dispatch = useDispatch() 
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -45,6 +45,7 @@ let dispatch = useDispatch()
           <button>Add</button>
           <p ref={errorText}></p>
         </form>
+        <ShopTable />
       </div>
     </>
   );
