@@ -10,6 +10,7 @@ import AddAdmin from "./components/AddAdmin.jsx";
 import Layout from "./components/Layout.jsx";
 import store from "./redux/store";
 import { Provider } from "react-redux";
+
 function Cibo() {
   return (
     <BrowserRouter>
@@ -19,6 +20,7 @@ function Cibo() {
           <Route path="AddShop" element={<AddShop />} />
           <Route path="LogUp" element={<Login />} />
           <Route path="Login" element={<Login />} />
+      
         </Route>
       </Routes>
     </BrowserRouter>
