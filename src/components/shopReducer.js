@@ -7,24 +7,18 @@ export const ShopSlice = createSlice({
   initialState: [
     {
       id: 1,
-      title: "Ikki eshik orasi",
-      author: "O'tkir Hoshimov",
-      price: 15000,
-      isSold: false,
+      name: "7/11",
+      address: "Chorsu"
     },
     {
       id: 2,
-      title: "Metro 2034",
-      author: "Dmitriy Gluhovskiy",
-      price: 25000,
-      isSold: false,
+      name: "Abu Saxiy",
+      address: "Chilonzor dahasi"
     },
     {
       id: 3,
-      title: "Shaytanat",
-      author: "Tohir Malik",
-      price: 23000,
-      isSold: false,
+      name: "Azon.uz",
+      address: "Paxta ko'chasi"
     },
   ],
 
@@ -32,10 +26,8 @@ export const ShopSlice = createSlice({
     addShop: (state, action) => {
       state.push({
         id: ++lastId,
-        title: action.payload.title,
-        author: action.payload.author,
-        price: action.payload.price,
-        isSold: false,
+        name: action.payload.name,
+        address: action.payload.address,
       });
     },
   },
