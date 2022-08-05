@@ -1,11 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
-import shops from "./shopReducer"
+import shops from "./shopReducer";
 import addAdmin from "./adminReducer";
+
 const store = configureStore({
-  reducer:{
+  reducer: {
     shops,
-    addAdmin
-  }
-})
+    addAdmin,
+  },
+});
 
 export default store;
